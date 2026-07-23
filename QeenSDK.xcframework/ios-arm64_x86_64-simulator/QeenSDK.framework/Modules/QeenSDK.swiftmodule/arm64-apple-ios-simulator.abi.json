@@ -1,0 +1,398 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "QeenSDK",
+    "printedName": "QeenSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QeenSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QeenSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QeenSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "PostHog",
+        "printedName": "PostHog",
+        "declKind": "Import",
+        "moduleName": "QeenSDK",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QeenSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QeenSDK",
+        "printedName": "QeenSDK",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(apiKey:host:debug:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QeenSDKAAO9configure6apiKey4host5debugySS_SSSbtFZ",
+            "mangledName": "$s7QeenSDKAAO9configure6apiKey4host5debugySS_SSSbtFZ",
+            "moduleName": "QeenSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identify",
+            "printedName": "identify(userId:traits:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QeenSDKAAO8identify6userId6traitsySS_SDySSypGSgtFZ",
+            "mangledName": "$s7QeenSDKAAO8identify6userId6traitsySS_SDySSypGSgtFZ",
+            "moduleName": "QeenSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(_:properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QeenSDKAAO5track_10propertiesySS_SDySSypGSgtFZ",
+            "mangledName": "$s7QeenSDKAAO5track_10propertiesySS_SDySSypGSgtFZ",
+            "moduleName": "QeenSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "screen",
+            "printedName": "screen(_:properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QeenSDKAAO6screen_10propertiesySS_SDySSypGSgtFZ",
+            "mangledName": "$s7QeenSDKAAO6screen_10propertiesySS_SDySSypGSgtFZ",
+            "moduleName": "QeenSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QeenSDKAAO5resetyyFZ",
+            "mangledName": "$s7QeenSDKAAO5resetyyFZ",
+            "moduleName": "QeenSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flush",
+            "printedName": "flush()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QeenSDKAAO5flushyyFZ",
+            "mangledName": "$s7QeenSDKAAO5flushyyFZ",
+            "moduleName": "QeenSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleDeepLink",
+            "printedName": "handleDeepLink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QeenSDKAAO14handleDeepLinkyy10Foundation3URLVFZ",
+            "mangledName": "$s7QeenSDKAAO14handleDeepLinkyy10Foundation3URLVFZ",
+            "moduleName": "QeenSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QeenSDKAAO",
+        "mangledName": "$s7QeenSDKAAO",
+        "moduleName": "QeenSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/CampaignAttribution.swift",
+      "kind": "Array",
+      "offset": 841,
+      "length": 113,
+      "value": "[\"utm_source\", \"utm_medium\", \"utm_campaign\", \"utm_term\", \"utm_content\", \"gclid\", \"fbclid\"]"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/CampaignAttribution.swift",
+      "kind": "StringLiteral",
+      "offset": 1011,
+      "length": 34,
+      "value": "\"analytics.attribution.firstTouch\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/CampaignAttribution.swift",
+      "kind": "StringLiteral",
+      "offset": 1093,
+      "length": 33,
+      "value": "\"analytics.attribution.lastTouch\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1388,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1878,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
