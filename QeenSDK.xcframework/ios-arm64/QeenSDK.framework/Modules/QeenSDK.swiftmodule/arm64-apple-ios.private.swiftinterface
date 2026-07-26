@@ -8,7 +8,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public enum QeenSDK {
-  public static func configure(apiKey: Swift.String, host: Swift.String, debug: Swift.Bool = false)
+  public static func configure(apiKey: Swift.String, host: Swift.String, debug: Swift.Bool = false, options: [Swift.String : Any] = [:])
   public static func identify(userId: Swift.String, traits: [Swift.String : Any]? = nil)
   public static func track(_ event: Swift.String, properties: [Swift.String : Any]? = nil)
   public static func screen(_ name: Swift.String, properties: [Swift.String : Any]? = nil)

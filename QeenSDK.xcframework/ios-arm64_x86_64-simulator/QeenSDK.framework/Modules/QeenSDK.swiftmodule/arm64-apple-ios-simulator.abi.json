@@ -51,7 +51,7 @@
           {
             "kind": "Function",
             "name": "configure",
-            "printedName": "configure(apiKey:host:debug:)",
+            "printedName": "configure(apiKey:host:debug:options:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -76,11 +76,31 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7QeenSDKAAO9configure6apiKey4host5debugySS_SSSbtFZ",
-            "mangledName": "$s7QeenSDKAAO9configure6apiKey4host5debugySS_SSSbtFZ",
+            "usr": "s:7QeenSDKAAO9configure6apiKey4host5debug7optionsySS_SSSbSDySSypGtFZ",
+            "mangledName": "$s7QeenSDKAAO9configure6apiKey4host5debug7optionsySS_SSSbSDySSypGtFZ",
             "moduleName": "QeenSDK",
             "static": true,
             "declAttributes": [
@@ -390,9 +410,16 @@
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1878,
+      "offset": 2029,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
+      "kind": "Dictionary",
+      "offset": 2061,
+      "length": 3,
+      "value": "[]"
     }
   ]
 }
