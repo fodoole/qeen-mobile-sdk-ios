@@ -52,8 +52,11 @@ QeenSDK.reset()
 QeenSDK.handleDeepLink(url)
 ```
 
-`configure(debug:)` toggles `[QeenSDK]` console logging. Deep links are parsed for UTM +
-`gclid`/`fbclid`; first-touch and last-touch campaign params attach to every subsequent event.
+`configure(debug:)` toggles `[QeenSDK]` console logging. Deep links are parsed for campaign
+attribution — any `utm_*` param and any `*clid` click id (`gclid`, `fbclid`, `ttclid`, …) —
+and first-touch and last-touch campaign params attach to every subsequent event. Every other
+query param on the link is also captured on the `Deep Link Opened` event, so new marketing
+params need no SDK update.
 
 ## What ships
 
