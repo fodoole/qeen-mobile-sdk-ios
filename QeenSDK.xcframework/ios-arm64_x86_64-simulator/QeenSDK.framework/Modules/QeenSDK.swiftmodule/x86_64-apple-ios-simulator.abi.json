@@ -382,23 +382,9 @@
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/CampaignAttribution.swift",
       "kind": "Array",
-      "offset": 1203,
+      "offset": 760,
       "length": 123,
       "value": "[\"utm_source\", \"utm_medium\", \"utm_campaign\", \"utm_term\", \"utm_content\", \"gclid\", \"fbclid\", \"ttclid\"]"
-    },
-    {
-      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/CampaignAttribution.swift",
-      "kind": "StringLiteral",
-      "offset": 2032,
-      "length": 34,
-      "value": "\"analytics.attribution.firstTouch\""
-    },
-    {
-      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/CampaignAttribution.swift",
-      "kind": "StringLiteral",
-      "offset": 2114,
-      "length": 33,
-      "value": "\"analytics.attribution.lastTouch\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
