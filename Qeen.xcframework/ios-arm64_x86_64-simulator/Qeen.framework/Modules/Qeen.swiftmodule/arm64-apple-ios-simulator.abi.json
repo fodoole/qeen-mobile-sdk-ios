@@ -1,0 +1,3841 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "Qeen",
+    "printedName": "Qeen",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "Import",
+        "name": "PostHog",
+        "printedName": "PostHog",
+        "declKind": "Import",
+        "moduleName": "Qeen",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QeenSDK",
+        "printedName": "QeenSDK",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(apiKey:host:debug:options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO9configure6apiKey4host5debug7optionsySS_SSSbSDySSypGtFZ",
+            "mangledName": "$s4Qeen0A3SDKO9configure6apiKey4host5debug7optionsySS_SSSbSDySSypGtFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identify",
+            "printedName": "identify(userId:traits:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO8identify6userId6traitsySS_SDySSypGSgtFZ",
+            "mangledName": "$s4Qeen0A3SDKO8identify6userId6traitsySS_SDySSypGSgtFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(_:properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO5track_10propertiesySS_SDySSypGSgtFZ",
+            "mangledName": "$s4Qeen0A3SDKO5track_10propertiesySS_SDySSypGSgtFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QeenEvent",
+                "printedName": "Qeen.QeenSDK.QeenEvent",
+                "usr": "s:4Qeen0A3SDKO0A5EventO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO5trackyyAC0A5EventOFZ",
+            "mangledName": "$s4Qeen0A3SDKO5trackyyAC0A5EventOFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "productViewed",
+            "printedName": "productViewed(item:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LineItem",
+                "printedName": "Qeen.QeenSDK.LineItem",
+                "usr": "s:4Qeen0A3SDKO8LineItemV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO13productViewed4itemyAC8LineItemV_tFZ",
+            "mangledName": "$s4Qeen0A3SDKO13productViewed4itemyAC8LineItemV_tFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addToCart",
+            "printedName": "addToCart(cartId:item:value:itemCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LineItem",
+                "printedName": "Qeen.QeenSDK.LineItem",
+                "usr": "s:4Qeen0A3SDKO8LineItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qeen.QeenSDK.Money?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Money",
+                    "printedName": "Qeen.QeenSDK.Money",
+                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO9addToCart6cartId4item5value0H5CountySS_AC8LineItemVAC5MoneyVSgSiSgtFZ",
+            "mangledName": "$s4Qeen0A3SDKO9addToCart6cartId4item5value0H5CountySS_AC8LineItemVAC5MoneyVSgSiSgtFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cartUpdated",
+            "printedName": "cartUpdated(cartId:value:itemCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qeen.QeenSDK.Money?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Money",
+                    "printedName": "Qeen.QeenSDK.Money",
+                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO11cartUpdated0C2Id5value9itemCountySS_AC5MoneyVSgSiSgtFZ",
+            "mangledName": "$s4Qeen0A3SDKO11cartUpdated0C2Id5value9itemCountySS_AC5MoneyVSgSiSgtFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkoutStarted",
+            "printedName": "checkoutStarted(cartId:value:itemCount:items:email:phone:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qeen.QeenSDK.Money?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Money",
+                    "printedName": "Qeen.QeenSDK.Money",
+                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Qeen.QeenSDK.LineItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LineItem",
+                    "printedName": "Qeen.QeenSDK.LineItem",
+                    "usr": "s:4Qeen0A3SDKO8LineItemV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO15checkoutStarted6cartId5value9itemCount5items5email5phoneySS_AC5MoneyVSgSiSgSayAC8LineItemVGSSSgARtFZ",
+            "mangledName": "$s4Qeen0A3SDKO15checkoutStarted6cartId5value9itemCount5items5email5phoneySS_AC5MoneyVSgSiSgSayAC8LineItemVGSSSgARtFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "orderCompleted",
+            "printedName": "orderCompleted(orderId:cartId:value:items:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qeen.QeenSDK.Money?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Money",
+                    "printedName": "Qeen.QeenSDK.Money",
+                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Qeen.QeenSDK.LineItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LineItem",
+                    "printedName": "Qeen.QeenSDK.LineItem",
+                    "usr": "s:4Qeen0A3SDKO8LineItemV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO14orderCompleted0C2Id04cartE05value5itemsySS_SSAC5MoneyVSgSayAC8LineItemVGtFZ",
+            "mangledName": "$s4Qeen0A3SDKO14orderCompleted0C2Id04cartE05value5itemsySS_SSAC5MoneyVSgSayAC8LineItemVGtFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "orderRefunded",
+            "printedName": "orderRefunded(orderId:value:items:refundId:cartId:reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qeen.QeenSDK.Money?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Money",
+                    "printedName": "Qeen.QeenSDK.Money",
+                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Qeen.QeenSDK.LineItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LineItem",
+                    "printedName": "Qeen.QeenSDK.LineItem",
+                    "usr": "s:4Qeen0A3SDKO8LineItemV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO13orderRefunded0C2Id5value5items06refundE004cartE06reasonySS_AC5MoneyVSgSayAC8LineItemVGSSSgA2QtFZ",
+            "mangledName": "$s4Qeen0A3SDKO13orderRefunded0C2Id5value5items06refundE004cartE06reasonySS_AC5MoneyVSgSayAC8LineItemVGSSSgA2QtFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signedIn",
+            "printedName": "signedIn(method:email:phone:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO8signedIn6method5email5phoneySSSg_A2HtFZ",
+            "mangledName": "$s4Qeen0A3SDKO8signedIn6method5email5phoneySSSg_A2HtFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signedUp",
+            "printedName": "signedUp(method:email:phone:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO8signedUp6method5email5phoneySSSg_A2HtFZ",
+            "mangledName": "$s4Qeen0A3SDKO8signedUp6method5email5phoneySSSg_A2HtFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "screen",
+            "printedName": "screen(_:properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO6screen_10propertiesySS_SDySSypGSgtFZ",
+            "mangledName": "$s4Qeen0A3SDKO6screen_10propertiesySS_SDySSypGSgtFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO5resetyyFZ",
+            "mangledName": "$s4Qeen0A3SDKO5resetyyFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flush",
+            "printedName": "flush()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO5flushyyFZ",
+            "mangledName": "$s4Qeen0A3SDKO5flushyyFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleDeepLink",
+            "printedName": "handleDeepLink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO14handleDeepLinkyy10Foundation3URLVFZ",
+            "mangledName": "$s4Qeen0A3SDKO14handleDeepLinkyy10Foundation3URLVFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "QeenEvent",
+            "printedName": "QeenEvent",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "productViewed",
+                "printedName": "productViewed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Qeen.QeenSDK.QeenEvent.Type) -> (Qeen.QeenSDK.LineItem) -> Qeen.QeenSDK.QeenEvent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Qeen.QeenSDK.LineItem) -> Qeen.QeenSDK.QeenEvent",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(item: Qeen.QeenSDK.LineItem)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "LineItem",
+                                "printedName": "Qeen.QeenSDK.LineItem",
+                                "usr": "s:4Qeen0A3SDKO8LineItemV"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Qeen.QeenSDK.QeenEvent.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Qeen0A3SDKO0A5EventO13productViewedyAeC8LineItemV_tcAEmF",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO13productViewedyAeC8LineItemV_tcAEmF",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "addToCart",
+                "printedName": "addToCart",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Qeen.QeenSDK.QeenEvent.Type) -> (Swift.String, Qeen.QeenSDK.LineItem, Qeen.QeenSDK.Money?, Swift.Int?) -> Qeen.QeenSDK.QeenEvent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Qeen.QeenSDK.LineItem, Qeen.QeenSDK.Money?, Swift.Int?) -> Qeen.QeenSDK.QeenEvent",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(cartId: Swift.String, item: Qeen.QeenSDK.LineItem, value: Qeen.QeenSDK.Money?, itemCount: Swift.Int?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "LineItem",
+                                "printedName": "Qeen.QeenSDK.LineItem",
+                                "usr": "s:4Qeen0A3SDKO8LineItemV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Qeen.QeenSDK.Money?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Money",
+                                    "printedName": "Qeen.QeenSDK.Money",
+                                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.Int?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int",
+                                    "printedName": "Swift.Int",
+                                    "usr": "s:Si"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Qeen.QeenSDK.QeenEvent.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Qeen0A3SDKO0A5EventO9addToCartyAESS_AC8LineItemVAC5MoneyVSgSiSgtcAEmF",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO9addToCartyAESS_AC8LineItemVAC5MoneyVSgSiSgtcAEmF",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "cartUpdated",
+                "printedName": "cartUpdated",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Qeen.QeenSDK.QeenEvent.Type) -> (Swift.String, Qeen.QeenSDK.Money?, Swift.Int?) -> Qeen.QeenSDK.QeenEvent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Qeen.QeenSDK.Money?, Swift.Int?) -> Qeen.QeenSDK.QeenEvent",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(cartId: Swift.String, value: Qeen.QeenSDK.Money?, itemCount: Swift.Int?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Qeen.QeenSDK.Money?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Money",
+                                    "printedName": "Qeen.QeenSDK.Money",
+                                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.Int?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int",
+                                    "printedName": "Swift.Int",
+                                    "usr": "s:Si"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Qeen.QeenSDK.QeenEvent.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Qeen0A3SDKO0A5EventO11cartUpdatedyAESS_AC5MoneyVSgSiSgtcAEmF",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO11cartUpdatedyAESS_AC5MoneyVSgSiSgtcAEmF",
+                "moduleName": "Qeen"
+              },
+              {
+                "kind": "Var",
+                "name": "checkoutStarted",
+                "printedName": "checkoutStarted",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Qeen.QeenSDK.QeenEvent.Type) -> (Swift.String, Qeen.QeenSDK.Money?, Swift.Int?, [Qeen.QeenSDK.LineItem], Swift.String?, Swift.String?) -> Qeen.QeenSDK.QeenEvent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Qeen.QeenSDK.Money?, Swift.Int?, [Qeen.QeenSDK.LineItem], Swift.String?, Swift.String?) -> Qeen.QeenSDK.QeenEvent",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(cartId: Swift.String, value: Qeen.QeenSDK.Money?, itemCount: Swift.Int?, items: [Qeen.QeenSDK.LineItem], email: Swift.String?, phone: Swift.String?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Qeen.QeenSDK.Money?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Money",
+                                    "printedName": "Qeen.QeenSDK.Money",
+                                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.Int?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int",
+                                    "printedName": "Swift.Int",
+                                    "usr": "s:Si"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[Qeen.QeenSDK.LineItem]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "LineItem",
+                                    "printedName": "Qeen.QeenSDK.LineItem",
+                                    "usr": "s:4Qeen0A3SDKO8LineItemV"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Qeen.QeenSDK.QeenEvent.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Qeen0A3SDKO0A5EventO15checkoutStartedyAESS_AC5MoneyVSgSiSgSayAC8LineItemVGSSSgANtcAEmF",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO15checkoutStartedyAESS_AC5MoneyVSgSiSgSayAC8LineItemVGSSSgANtcAEmF",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "orderCompleted",
+                "printedName": "orderCompleted",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Qeen.QeenSDK.QeenEvent.Type) -> (Swift.String, Swift.String, Qeen.QeenSDK.Money?, [Qeen.QeenSDK.LineItem]) -> Qeen.QeenSDK.QeenEvent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.String, Qeen.QeenSDK.Money?, [Qeen.QeenSDK.LineItem]) -> Qeen.QeenSDK.QeenEvent",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(orderId: Swift.String, cartId: Swift.String, value: Qeen.QeenSDK.Money?, items: [Qeen.QeenSDK.LineItem])",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Qeen.QeenSDK.Money?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Money",
+                                    "printedName": "Qeen.QeenSDK.Money",
+                                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[Qeen.QeenSDK.LineItem]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "LineItem",
+                                    "printedName": "Qeen.QeenSDK.LineItem",
+                                    "usr": "s:4Qeen0A3SDKO8LineItemV"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Qeen.QeenSDK.QeenEvent.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Qeen0A3SDKO0A5EventO14orderCompletedyAESS_SSAC5MoneyVSgSayAC8LineItemVGtcAEmF",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO14orderCompletedyAESS_SSAC5MoneyVSgSayAC8LineItemVGtcAEmF",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "orderRefunded",
+                "printedName": "orderRefunded",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Qeen.QeenSDK.QeenEvent.Type) -> (Swift.String, Qeen.QeenSDK.Money?, [Qeen.QeenSDK.LineItem], Swift.String?, Swift.String?, Swift.String?) -> Qeen.QeenSDK.QeenEvent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Qeen.QeenSDK.Money?, [Qeen.QeenSDK.LineItem], Swift.String?, Swift.String?, Swift.String?) -> Qeen.QeenSDK.QeenEvent",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(orderId: Swift.String, value: Qeen.QeenSDK.Money?, items: [Qeen.QeenSDK.LineItem], refundId: Swift.String?, cartId: Swift.String?, reason: Swift.String?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Qeen.QeenSDK.Money?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Money",
+                                    "printedName": "Qeen.QeenSDK.Money",
+                                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[Qeen.QeenSDK.LineItem]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "LineItem",
+                                    "printedName": "Qeen.QeenSDK.LineItem",
+                                    "usr": "s:4Qeen0A3SDKO8LineItemV"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Qeen.QeenSDK.QeenEvent.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Qeen0A3SDKO0A5EventO13orderRefundedyAESS_AC5MoneyVSgSayAC8LineItemVGSSSgA2MtcAEmF",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO13orderRefundedyAESS_AC5MoneyVSgSayAC8LineItemVGSSSgA2MtcAEmF",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "signedIn",
+                "printedName": "signedIn",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Qeen.QeenSDK.QeenEvent.Type) -> (Swift.String?, Swift.String?, Swift.String?) -> Qeen.QeenSDK.QeenEvent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String?, Swift.String?, Swift.String?) -> Qeen.QeenSDK.QeenEvent",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(method: Swift.String?, email: Swift.String?, phone: Swift.String?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Qeen.QeenSDK.QeenEvent.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Qeen0A3SDKO0A5EventO8signedInyAESSSg_A2GtcAEmF",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO8signedInyAESSSg_A2GtcAEmF",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "signedUp",
+                "printedName": "signedUp",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Qeen.QeenSDK.QeenEvent.Type) -> (Swift.String?, Swift.String?, Swift.String?) -> Qeen.QeenSDK.QeenEvent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String?, Swift.String?, Swift.String?) -> Qeen.QeenSDK.QeenEvent",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(method: Swift.String?, email: Swift.String?, phone: Swift.String?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Qeen.QeenSDK.QeenEvent.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Qeen0A3SDKO0A5EventO8signedUpyAESSSg_A2GtcAEmF",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO8signedUpyAESSSg_A2GtcAEmF",
+                "moduleName": "Qeen"
+              },
+              {
+                "kind": "Var",
+                "name": "custom",
+                "printedName": "custom",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Qeen.QeenSDK.QeenEvent.Type) -> (Swift.String, [Swift.String : Any]) -> Qeen.QeenSDK.QeenEvent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, [Swift.String : Any]) -> Qeen.QeenSDK.QeenEvent",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(eventName: Swift.String, properties: [Swift.String : Any])",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Qeen.QeenSDK.QeenEvent.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Qeen0A3SDKO0A5EventO6customyAESS_SDySSypGtcAEmF",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO6customyAESS_SDySSypGtcAEmF",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "name",
+                "printedName": "name",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO0A5EventO4nameSSvp",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO4nameSSvp",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO0A5EventO4nameSSvg",
+                    "mangledName": "$s4Qeen0A3SDKO0A5EventO4nameSSvg",
+                    "moduleName": "Qeen",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "reservedEventNames",
+                "printedName": "reservedEventNames",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO0A5EventO08reservedC5NamesShySSGvpZ",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO08reservedC5NamesShySSGvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Set",
+                        "printedName": "Swift.Set<Swift.String>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sh"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO0A5EventO08reservedC5NamesShySSGvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO0A5EventO08reservedC5NamesShySSGvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:4Qeen0A3SDKO0A5EventO",
+            "mangledName": "$s4Qeen0A3SDKO0A5EventO",
+            "moduleName": "Qeen",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "LineItem",
+            "printedName": "LineItem",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "productId",
+                "printedName": "productId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8LineItemV9productIdSSvp",
+                "mangledName": "$s4Qeen0A3SDKO8LineItemV9productIdSSvp",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8LineItemV9productIdSSvg",
+                    "mangledName": "$s4Qeen0A3SDKO8LineItemV9productIdSSvg",
+                    "moduleName": "Qeen",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "quantity",
+                "printedName": "quantity",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8LineItemV8quantitySivp",
+                "mangledName": "$s4Qeen0A3SDKO8LineItemV8quantitySivp",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8LineItemV8quantitySivg",
+                    "mangledName": "$s4Qeen0A3SDKO8LineItemV8quantitySivg",
+                    "moduleName": "Qeen",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "unitPrice",
+                "printedName": "unitPrice",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Qeen.QeenSDK.Money?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Money",
+                        "printedName": "Qeen.QeenSDK.Money",
+                        "usr": "s:4Qeen0A3SDKO5MoneyV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8LineItemV9unitPriceAC5MoneyVSgvp",
+                "mangledName": "$s4Qeen0A3SDKO8LineItemV9unitPriceAC5MoneyVSgvp",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Qeen.QeenSDK.Money?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Money",
+                            "printedName": "Qeen.QeenSDK.Money",
+                            "usr": "s:4Qeen0A3SDKO5MoneyV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8LineItemV9unitPriceAC5MoneyVSgvg",
+                    "mangledName": "$s4Qeen0A3SDKO8LineItemV9unitPriceAC5MoneyVSgvg",
+                    "moduleName": "Qeen",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "name",
+                "printedName": "name",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8LineItemV4nameSSSgvp",
+                "mangledName": "$s4Qeen0A3SDKO8LineItemV4nameSSSgvp",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8LineItemV4nameSSSgvg",
+                    "mangledName": "$s4Qeen0A3SDKO8LineItemV4nameSSSgvg",
+                    "moduleName": "Qeen",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "category",
+                "printedName": "category",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8LineItemV8categorySSSgvp",
+                "mangledName": "$s4Qeen0A3SDKO8LineItemV8categorySSSgvp",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8LineItemV8categorySSSgvg",
+                    "mangledName": "$s4Qeen0A3SDKO8LineItemV8categorySSSgvg",
+                    "moduleName": "Qeen",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "variantId",
+                "printedName": "variantId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8LineItemV9variantIdSSSgvp",
+                "mangledName": "$s4Qeen0A3SDKO8LineItemV9variantIdSSSgvp",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8LineItemV9variantIdSSSgvg",
+                    "mangledName": "$s4Qeen0A3SDKO8LineItemV9variantIdSSSgvg",
+                    "moduleName": "Qeen",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(productId:quantity:unitPrice:name:category:variantId:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LineItem",
+                    "printedName": "Qeen.QeenSDK.LineItem",
+                    "usr": "s:4Qeen0A3SDKO8LineItemV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "hasDefaultArg": true,
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Qeen.QeenSDK.Money?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Money",
+                        "printedName": "Qeen.QeenSDK.Money",
+                        "usr": "s:4Qeen0A3SDKO5MoneyV"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:4Qeen0A3SDKO8LineItemV9productId8quantity9unitPrice4name8category07variantF0AESS_SiAC5MoneyVSgSSSgA2Otcfc",
+                "mangledName": "$s4Qeen0A3SDKO8LineItemV9productId8quantity9unitPrice4name8category07variantF0AESS_SiAC5MoneyVSgSSSgA2Otcfc",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:4Qeen0A3SDKO8LineItemV",
+            "mangledName": "$s4Qeen0A3SDKO8LineItemV",
+            "moduleName": "Qeen",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Money",
+            "printedName": "Money",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "amount",
+                "printedName": "amount",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO5MoneyV6amountSdvp",
+                "mangledName": "$s4Qeen0A3SDKO5MoneyV6amountSdvp",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO5MoneyV6amountSdvg",
+                    "mangledName": "$s4Qeen0A3SDKO5MoneyV6amountSdvg",
+                    "moduleName": "Qeen",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "currency",
+                "printedName": "currency",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO5MoneyV8currencyAC8CurrencyVvp",
+                "mangledName": "$s4Qeen0A3SDKO5MoneyV8currencyAC8CurrencyVvp",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO5MoneyV8currencyAC8CurrencyVvg",
+                    "mangledName": "$s4Qeen0A3SDKO5MoneyV8currencyAC8CurrencyVvg",
+                    "moduleName": "Qeen",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(amount:currency:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Money",
+                    "printedName": "Qeen.QeenSDK.Money",
+                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:4Qeen0A3SDKO5MoneyV6amount8currencyAESd_AC8CurrencyVtcfc",
+                "mangledName": "$s4Qeen0A3SDKO5MoneyV6amount8currencyAESd_AC8CurrencyVtcfc",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "of",
+                "printedName": "of(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Money",
+                    "printedName": "Qeen.QeenSDK.Money",
+                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:4Qeen0A3SDKO5MoneyV2ofyAESd_AC8CurrencyVtFZ",
+                "mangledName": "$s4Qeen0A3SDKO5MoneyV2ofyAESd_AC8CurrencyVtFZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "usd",
+                "printedName": "usd(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Money",
+                    "printedName": "Qeen.QeenSDK.Money",
+                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:4Qeen0A3SDKO5MoneyV3usdyAESdFZ",
+                "mangledName": "$s4Qeen0A3SDKO5MoneyV3usdyAESdFZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "jod",
+                "printedName": "jod(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Money",
+                    "printedName": "Qeen.QeenSDK.Money",
+                    "usr": "s:4Qeen0A3SDKO5MoneyV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:4Qeen0A3SDKO5MoneyV3jodyAESdFZ",
+                "mangledName": "$s4Qeen0A3SDKO5MoneyV3jodyAESdFZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:4Qeen0A3SDKO5MoneyV",
+            "mangledName": "$s4Qeen0A3SDKO5MoneyV",
+            "moduleName": "Qeen",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Currency",
+            "printedName": "Currency",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "code",
+                "printedName": "code",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV4codeSSvp",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV4codeSSvp",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV4codeSSvg",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV4codeSSvg",
+                    "moduleName": "Qeen",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "usd",
+                "printedName": "usd",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3usdAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3usdAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3usdAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3usdAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "eur",
+                "printedName": "eur",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3eurAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3eurAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3eurAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3eurAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "gbp",
+                "printedName": "gbp",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3gbpAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3gbpAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3gbpAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3gbpAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "jod",
+                "printedName": "jod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3jodAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3jodAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3jodAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3jodAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "sar",
+                "printedName": "sar",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3sarAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3sarAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3sarAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3sarAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "aed",
+                "printedName": "aed",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3aedAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3aedAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3aedAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3aedAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "egp",
+                "printedName": "egp",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3egpAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3egpAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3egpAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3egpAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "kwd",
+                "printedName": "kwd",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3kwdAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3kwdAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3kwdAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3kwdAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "qar",
+                "printedName": "qar",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3qarAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3qarAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3qarAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3qarAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "bhd",
+                "printedName": "bhd",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3bhdAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3bhdAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3bhdAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3bhdAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "omr",
+                "printedName": "omr",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3omrAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3omrAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3omrAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3omrAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "TRY",
+                "printedName": "TRY",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3TRYAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3TRYAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3TRYAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3TRYAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "cad",
+                "printedName": "cad",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3cadAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3cadAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3cadAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3cadAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "aud",
+                "printedName": "aud",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3audAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3audAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3audAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3audAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "jpy",
+                "printedName": "jpy",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3jpyAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3jpyAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3jpyAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3jpyAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "inr",
+                "printedName": "inr",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV3inrAEvpZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV3inrAEvpZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV3inrAEvgZ",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV3inrAEvgZ",
+                    "moduleName": "Qeen",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "of",
+                "printedName": "of(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Qeen.QeenSDK.Currency?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "Qeen.QeenSDK.Currency",
+                        "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV2ofyAESgSSFZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV2ofyAESgSSFZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "Qeen.QeenSDK.Currency",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV2eeoiySbAE_AEtFZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV9hashValueSivp",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV9hashValueSivp",
+                "moduleName": "Qeen",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4Qeen0A3SDKO8CurrencyV9hashValueSivg",
+                    "mangledName": "$s4Qeen0A3SDKO8CurrencyV9hashValueSivg",
+                    "moduleName": "Qeen",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:4Qeen0A3SDKO8CurrencyV4hash4intoys6HasherVz_tF",
+                "mangledName": "$s4Qeen0A3SDKO8CurrencyV4hash4intoys6HasherVz_tF",
+                "moduleName": "Qeen",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:4Qeen0A3SDKO8CurrencyV",
+            "mangledName": "$s4Qeen0A3SDKO8CurrencyV",
+            "moduleName": "Qeen",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4Qeen0A3SDKO",
+        "mangledName": "$s4Qeen0A3SDKO",
+        "moduleName": "Qeen",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/CampaignAttribution.swift",
+      "kind": "Array",
+      "offset": 760,
+      "length": 123,
+      "value": "[\"utm_source\", \"utm_medium\", \"utm_campaign\", \"utm_term\", \"utm_content\", \"gclid\", \"fbclid\", \"ttclid\"]"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "Array",
+      "offset": 1696,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "Array",
+      "offset": 1935,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "Array",
+      "offset": 2400,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "Dictionary",
+      "offset": 2823,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "Array",
+      "offset": 3650,
+      "length": 167,
+      "value": "[\"product_viewed\", \"add_to_cart\", \"cart_updated\", \"checkout_started\", \"order_completed\", \"order_refunded\", \"signed_in\", \"signed_up\"]"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7658,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 9973,
+      "length": 5,
+      "value": "\"USD\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10021,
+      "length": 5,
+      "value": "\"EUR\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10069,
+      "length": 5,
+      "value": "\"GBP\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10117,
+      "length": 5,
+      "value": "\"JOD\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10165,
+      "length": 5,
+      "value": "\"SAR\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10213,
+      "length": 5,
+      "value": "\"AED\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10261,
+      "length": 5,
+      "value": "\"EGP\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10309,
+      "length": 5,
+      "value": "\"KWD\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10357,
+      "length": 5,
+      "value": "\"QAR\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10405,
+      "length": 5,
+      "value": "\"BHD\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10453,
+      "length": 5,
+      "value": "\"OMR\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10501,
+      "length": 5,
+      "value": "\"TRY\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10549,
+      "length": 5,
+      "value": "\"CAD\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10597,
+      "length": 5,
+      "value": "\"AUD\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10645,
+      "length": 5,
+      "value": "\"JPY\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10693,
+      "length": 5,
+      "value": "\"INR\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 10772,
+      "length": 15,
+      "value": "\"^[A-Za-z]{3}$\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1388,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2029,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
+      "kind": "Dictionary",
+      "offset": 2061,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
+      "kind": "Array",
+      "offset": 4823,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
+      "kind": "Array",
+      "offset": 5139,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
+      "kind": "Array",
+      "offset": 5365,
+      "length": 2,
+      "value": "[]"
+    }
+  ]
+}

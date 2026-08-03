@@ -1,0 +1,86 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -module-name Qeen -package-name qeensdk
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension Qeen.QeenSDK {
+  public enum QeenEvent {
+    case productViewed(item: Qeen.QeenSDK.LineItem)
+    case addToCart(cartId: Swift.String, item: Qeen.QeenSDK.LineItem, value: Qeen.QeenSDK.Money? = nil, itemCount: Swift.Int? = nil)
+    case cartUpdated(cartId: Swift.String, value: Qeen.QeenSDK.Money? = nil, itemCount: Swift.Int? = nil)
+    case checkoutStarted(cartId: Swift.String, value: Qeen.QeenSDK.Money? = nil, itemCount: Swift.Int? = nil, items: [Qeen.QeenSDK.LineItem] = [], email: Swift.String? = nil, phone: Swift.String? = nil)
+    case orderCompleted(orderId: Swift.String, cartId: Swift.String, value: Qeen.QeenSDK.Money? = nil, items: [Qeen.QeenSDK.LineItem] = [])
+    case orderRefunded(orderId: Swift.String, value: Qeen.QeenSDK.Money? = nil, items: [Qeen.QeenSDK.LineItem] = [], refundId: Swift.String? = nil, cartId: Swift.String? = nil, reason: Swift.String? = nil)
+    case signedIn(method: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil)
+    case signedUp(method: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil)
+    case custom(eventName: Swift.String, properties: [Swift.String : Any] = [:])
+    public var name: Swift.String {
+      get
+    }
+    public static let reservedEventNames: Swift.Set<Swift.String>
+  }
+  public struct LineItem {
+    public let productId: Swift.String
+    public let quantity: Swift.Int
+    public let unitPrice: Qeen.QeenSDK.Money?
+    public let name: Swift.String?
+    public let category: Swift.String?
+    public let variantId: Swift.String?
+    public init(productId: Swift.String, quantity: Swift.Int = 1, unitPrice: Qeen.QeenSDK.Money? = nil, name: Swift.String? = nil, category: Swift.String? = nil, variantId: Swift.String? = nil)
+  }
+  public struct Money {
+    public let amount: Swift.Double
+    public let currency: Qeen.QeenSDK.Currency
+    public init(amount: Swift.Double, currency: Qeen.QeenSDK.Currency)
+    public static func of(_ amount: Swift.Double, _ currency: Qeen.QeenSDK.Currency) -> Qeen.QeenSDK.Money
+    public static func usd(_ amount: Swift.Double) -> Qeen.QeenSDK.Money
+    public static func jod(_ amount: Swift.Double) -> Qeen.QeenSDK.Money
+  }
+  public struct Currency : Swift.Equatable, Swift.Hashable {
+    public let code: Swift.String
+    public static let usd: Qeen.QeenSDK.Currency
+    public static let eur: Qeen.QeenSDK.Currency
+    public static let gbp: Qeen.QeenSDK.Currency
+    public static let jod: Qeen.QeenSDK.Currency
+    public static let sar: Qeen.QeenSDK.Currency
+    public static let aed: Qeen.QeenSDK.Currency
+    public static let egp: Qeen.QeenSDK.Currency
+    public static let kwd: Qeen.QeenSDK.Currency
+    public static let qar: Qeen.QeenSDK.Currency
+    public static let bhd: Qeen.QeenSDK.Currency
+    public static let omr: Qeen.QeenSDK.Currency
+    public static let TRY: Qeen.QeenSDK.Currency
+    public static let cad: Qeen.QeenSDK.Currency
+    public static let aud: Qeen.QeenSDK.Currency
+    public static let jpy: Qeen.QeenSDK.Currency
+    public static let inr: Qeen.QeenSDK.Currency
+    public static func of(_ code: Swift.String) -> Qeen.QeenSDK.Currency?
+    public static func == (a: Qeen.QeenSDK.Currency, b: Qeen.QeenSDK.Currency) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public enum QeenSDK {
+  public static func configure(apiKey: Swift.String, host: Swift.String, debug: Swift.Bool = false, options: [Swift.String : Any] = [:])
+  public static func identify(userId: Swift.String, traits: [Swift.String : Any]? = nil)
+  public static func track(_ event: Swift.String, properties: [Swift.String : Any]? = nil)
+  public static func track(_ event: Qeen.QeenSDK.QeenEvent)
+  public static func productViewed(item: Qeen.QeenSDK.LineItem)
+  public static func addToCart(cartId: Swift.String, item: Qeen.QeenSDK.LineItem, value: Qeen.QeenSDK.Money? = nil, itemCount: Swift.Int? = nil)
+  public static func cartUpdated(cartId: Swift.String, value: Qeen.QeenSDK.Money? = nil, itemCount: Swift.Int? = nil)
+  public static func checkoutStarted(cartId: Swift.String, value: Qeen.QeenSDK.Money? = nil, itemCount: Swift.Int? = nil, items: [Qeen.QeenSDK.LineItem] = [], email: Swift.String? = nil, phone: Swift.String? = nil)
+  public static func orderCompleted(orderId: Swift.String, cartId: Swift.String, value: Qeen.QeenSDK.Money? = nil, items: [Qeen.QeenSDK.LineItem] = [])
+  public static func orderRefunded(orderId: Swift.String, value: Qeen.QeenSDK.Money? = nil, items: [Qeen.QeenSDK.LineItem] = [], refundId: Swift.String? = nil, cartId: Swift.String? = nil, reason: Swift.String? = nil)
+  public static func signedIn(method: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil)
+  public static func signedUp(method: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil)
+  public static func screen(_ name: Swift.String, properties: [Swift.String : Any]? = nil)
+  public static func reset()
+  public static func flush()
+  public static func handleDeepLink(_ url: Foundation.URL)
+}
