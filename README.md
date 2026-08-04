@@ -14,13 +14,13 @@ public API; the analytics engine is an internal implementation detail.
 https://github.com/fodoole/qeen-mobile-sdk-ios.git
 ```
 
-Pick a version (e.g. **Up to Next Major** from `1.3.0`) and add the **Qeen** library to your app target.
+Pick a version (e.g. **Up to Next Major** from `1.4.0`) and add the **Qeen** library to your app target.
 
 **Or in `Package.swift`:**
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/fodoole/qeen-mobile-sdk-ios.git", from: "1.3.0"),
+    .package(url: "https://github.com/fodoole/qeen-mobile-sdk-ios.git", from: "1.4.0"),
 ],
 targets: [
     .target(name: "YourApp", dependencies: [
