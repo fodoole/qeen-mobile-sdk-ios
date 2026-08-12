@@ -14,13 +14,13 @@ public API; the analytics engine is an internal implementation detail.
 https://github.com/fodoole/qeen-mobile-sdk-ios.git
 ```
 
-Pick a version (e.g. **Up to Next Major** from `1.4.0`) and add the **Qeen** library to your app target.
+Pick a version (e.g. **Up to Next Major** from `1.5.0`) and add the **Qeen** library to your app target.
 
 **Or in `Package.swift`:**
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/fodoole/qeen-mobile-sdk-ios.git", from: "1.4.0"),
+    .package(url: "https://github.com/fodoole/qeen-mobile-sdk-ios.git", from: "1.5.0"),
 ],
 targets: [
     .target(name: "YourApp", dependencies: [
@@ -48,7 +48,7 @@ QeenSDK.identify(userId: "user_42", traits: ["email": "a@b.com"])
 // Freeform events (unchanged):
 QeenSDK.track("Add To Cart", properties: ["product_id": "SKU-1001"])
 
-// Typed standard events (new in 1.3.0) — type-safe, correct wire keys:
+// Typed standard events (new in 1.3.0) — type-safe convenience methods:
 QeenSDK.productViewed(item: QeenSDK.LineItem(productId: "SKU-1001", unitPrice: .usd(39.99)))
 QeenSDK.addToCart(cartId: cartId,
                   item: QeenSDK.LineItem(productId: "SKU-1001", quantity: 1, unitPrice: .usd(39.99)))
@@ -76,9 +76,10 @@ params need no SDK update. Attribution is derived server-side by Qeen.
 
 The typed surface lives under the `QeenSDK` namespace: `QeenSDK.QeenEvent`, `QeenSDK.LineItem`,
 `QeenSDK.Money`, `QeenSDK.Currency`. Every monetary amount is a `Money` (an amount always carries a
-currency); product lines are always `LineItem`. Helpers exist for each standard event
+currency); product lines are always `LineItem`. Use the helper methods directly
 (`productViewed`, `addToCart`, `cartUpdated`, `checkoutStarted`, `orderCompleted`, `orderRefunded`,
-`signedIn`, `signedUp`), or pass a `QeenSDK.QeenEvent` to `QeenSDK.track(_:)`.
+`signedIn`, `signedUp`) and the SDK handles the underlying payload mapping for you. You can also pass
+a `QeenSDK.QeenEvent` to `QeenSDK.track(_:)`.
 
 ## What ships
 

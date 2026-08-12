@@ -27,6 +27,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "Import",
         "name": "PostHog",
         "printedName": "PostHog",
         "declKind": "Import",
@@ -4275,6 +4282,20 @@
       "offset": 760,
       "length": 123,
       "value": "[\"utm_source\", \"utm_medium\", \"utm_campaign\", \"utm_term\", \"utm_content\", \"gclid\", \"fbclid\", \"ttclid\"]"
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/DeviceIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 1060,
+      "length": 22,
+      "value": "\"ai.qeen.sdk.deviceId\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/PostHogProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1339,
+      "length": 16,
+      "value": "\"qeen_device_id\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
