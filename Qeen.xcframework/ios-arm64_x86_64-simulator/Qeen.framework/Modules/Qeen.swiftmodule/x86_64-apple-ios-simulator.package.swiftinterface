@@ -10,6 +10,8 @@ import _SwiftConcurrencyShims
 extension Qeen.QeenSDK {
   public enum QeenEvent {
     case productViewed(item: Qeen.QeenSDK.LineItem)
+    case pageViewed(name: Swift.String? = nil)
+    case wishlistAdd(item: Qeen.QeenSDK.LineItem)
     case addToCart(cartId: Swift.String, item: Qeen.QeenSDK.LineItem, value: Qeen.QeenSDK.Money? = nil, itemCount: Swift.Int? = nil)
     case cartUpdated(cartId: Swift.String, value: Qeen.QeenSDK.Money? = nil, itemCount: Swift.Int? = nil)
     case couponApplied(cartId: Swift.String, code: Swift.String)
@@ -78,6 +80,8 @@ public enum QeenSDK {
   public static func track(_ event: Swift.String, properties: [Swift.String : Any]? = nil)
   public static func track(_ event: Qeen.QeenSDK.QeenEvent)
   public static func productViewed(item: Qeen.QeenSDK.LineItem)
+  public static func pageViewed(name: Swift.String? = nil)
+  public static func wishlistAdd(item: Qeen.QeenSDK.LineItem)
   public static func addToCart(cartId: Swift.String, item: Qeen.QeenSDK.LineItem, value: Qeen.QeenSDK.Money? = nil, itemCount: Swift.Int? = nil)
   public static func cartUpdated(cartId: Swift.String, value: Qeen.QeenSDK.Money? = nil, itemCount: Swift.Int? = nil)
   public static func couponApplied(cartId: Swift.String, code: Swift.String)

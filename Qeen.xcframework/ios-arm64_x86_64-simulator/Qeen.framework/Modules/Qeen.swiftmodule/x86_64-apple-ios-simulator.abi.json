@@ -293,6 +293,69 @@
           },
           {
             "kind": "Function",
+            "name": "pageViewed",
+            "printedName": "pageViewed(name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO10pageViewed4nameySSSg_tFZ",
+            "mangledName": "$s4Qeen0A3SDKO10pageViewed4nameySSSg_tFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "wishlistAdd",
+            "printedName": "wishlistAdd(item:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LineItem",
+                "printedName": "Qeen.QeenSDK.LineItem",
+                "usr": "s:4Qeen0A3SDKO8LineItemV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO11wishlistAdd4itemyAC8LineItemV_tFZ",
+            "mangledName": "$s4Qeen0A3SDKO11wishlistAdd4itemyAC8LineItemV_tFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "addToCart",
             "printedName": "addToCart(cartId:item:value:itemCount:)",
             "children": [
@@ -1229,6 +1292,134 @@
                 "declKind": "EnumElement",
                 "usr": "s:4Qeen0A3SDKO0A5EventO13productViewedyAeC8LineItemV_tcAEmF",
                 "mangledName": "$s4Qeen0A3SDKO0A5EventO13productViewedyAeC8LineItemV_tcAEmF",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "pageViewed",
+                "printedName": "pageViewed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Qeen.QeenSDK.QeenEvent.Type) -> (Swift.String?) -> Qeen.QeenSDK.QeenEvent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String?) -> Qeen.QeenSDK.QeenEvent",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(name: Swift.String?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Qeen.QeenSDK.QeenEvent.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Qeen0A3SDKO0A5EventO10pageViewedyAESSSg_tcAEmF",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO10pageViewedyAESSSg_tcAEmF",
+                "moduleName": "Qeen",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "wishlistAdd",
+                "printedName": "wishlistAdd",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Qeen.QeenSDK.QeenEvent.Type) -> (Qeen.QeenSDK.LineItem) -> Qeen.QeenSDK.QeenEvent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Qeen.QeenSDK.LineItem) -> Qeen.QeenSDK.QeenEvent",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(item: Qeen.QeenSDK.LineItem)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "LineItem",
+                                "printedName": "Qeen.QeenSDK.LineItem",
+                                "usr": "s:4Qeen0A3SDKO8LineItemV"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Qeen.QeenSDK.QeenEvent.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QeenEvent",
+                            "printedName": "Qeen.QeenSDK.QeenEvent",
+                            "usr": "s:4Qeen0A3SDKO0A5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4Qeen0A3SDKO0A5EventO11wishlistAddyAeC8LineItemV_tcAEmF",
+                "mangledName": "$s4Qeen0A3SDKO0A5EventO11wishlistAddyAeC8LineItemV_tcAEmF",
                 "moduleName": "Qeen",
                 "declAttributes": [
                   "RawDocComment"
@@ -4300,168 +4491,168 @@
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "Array",
-      "offset": 1851,
+      "offset": 1987,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "Array",
-      "offset": 2223,
+      "offset": 2359,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "Array",
-      "offset": 2399,
+      "offset": 2535,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "Array",
-      "offset": 2864,
+      "offset": 3000,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "Dictionary",
-      "offset": 3287,
+      "offset": 3423,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "Array",
-      "offset": 4497,
-      "length": 334,
-      "value": "[\"product:view\", \"cart:add\", \"cart:update\", \"cart:apply_coupon\", \"cart:remove_coupon\", \"cart:clear\", \"checkout:start\", \"checkout:set_payment_method\", \"checkout:set_shipping_details\", \"order:complete\", \"order:place\", \"order:refund\", \"user:sign_in\", \"user:sign_up\"]"
+      "offset": 4744,
+      "length": 375,
+      "value": "[\"product:view\", \"page:view\", \"wishlist:add\", \"cart:add\", \"cart:update\", \"cart:apply_coupon\", \"cart:remove_coupon\", \"cart:clear\", \"checkout:start\", \"checkout:set_payment_method\", \"checkout:set_shipping_details\", \"order:complete\", \"order:place\", \"order:refund\", \"user:sign_in\", \"user:sign_up\"]"
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 9304,
+      "offset": 9749,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11619,
+      "offset": 12064,
       "length": 5,
       "value": "\"USD\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11667,
+      "offset": 12112,
       "length": 5,
       "value": "\"EUR\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11715,
+      "offset": 12160,
       "length": 5,
       "value": "\"GBP\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11763,
+      "offset": 12208,
       "length": 5,
       "value": "\"JOD\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11811,
+      "offset": 12256,
       "length": 5,
       "value": "\"SAR\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11859,
+      "offset": 12304,
       "length": 5,
       "value": "\"AED\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11907,
+      "offset": 12352,
       "length": 5,
       "value": "\"EGP\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11955,
+      "offset": 12400,
       "length": 5,
       "value": "\"KWD\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12003,
+      "offset": 12448,
       "length": 5,
       "value": "\"QAR\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12051,
+      "offset": 12496,
       "length": 5,
       "value": "\"BHD\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12099,
+      "offset": 12544,
       "length": 5,
       "value": "\"OMR\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12147,
+      "offset": 12592,
       "length": 5,
       "value": "\"TRY\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12195,
+      "offset": 12640,
       "length": 5,
       "value": "\"CAD\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12243,
+      "offset": 12688,
       "length": 5,
       "value": "\"AUD\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12291,
+      "offset": 12736,
       "length": 5,
       "value": "\"JPY\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12339,
+      "offset": 12784,
       "length": 5,
       "value": "\"INR\""
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenEvent.swift",
       "kind": "StringLiteral",
-      "offset": 12418,
+      "offset": 12863,
       "length": 15,
       "value": "\"^[A-Za-z]{3}$\""
     },
@@ -4489,28 +4680,28 @@
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
       "kind": "Array",
-      "offset": 5498,
+      "offset": 5701,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
       "kind": "Array",
-      "offset": 5814,
+      "offset": 6017,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
       "kind": "Array",
-      "offset": 6029,
+      "offset": 6232,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/QeenSDK.swift",
       "kind": "Array",
-      "offset": 6252,
+      "offset": 6455,
       "length": 2,
       "value": "[]"
     }
