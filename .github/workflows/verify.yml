@@ -1,0 +1,18 @@
+name: Verify xcframework
+
+# Preflight that would have caught ITMS-90332 (dangling PostHog bundle symlinks)
+# before publishing. Runs on every push/PR and on release tags.
+on:
+  push:
+    branches: [main]
+    tags: ['*']
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Qeen.xcframework
+        run: ./Scripts/verify-xcframework.sh Qeen.xcframework
