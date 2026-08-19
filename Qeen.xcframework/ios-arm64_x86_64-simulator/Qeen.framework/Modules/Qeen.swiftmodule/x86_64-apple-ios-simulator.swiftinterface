@@ -98,5 +98,10 @@ public enum QeenSDK {
   public static func screen(_ name: Swift.String, properties: [Swift.String : Any]? = nil)
   public static func reset()
   public static func flush()
+  public static func optIn()
+  public static func optOut()
+  public static var isOptedOut: Swift.Bool {
+    get
+  }
   public static func handleDeepLink(_ url: Foundation.URL)
 }

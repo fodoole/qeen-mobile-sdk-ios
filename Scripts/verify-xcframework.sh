@@ -52,6 +52,20 @@ for slice in "$XCFW"/*/; do
   if [[ ! -f "$fw/PrivacyInfo.xcprivacy" ]]; then
     echo "  ✗ [$name] missing PrivacyInfo.xcprivacy (ITMS-91053 risk)"; fail=1
   fi
+  # 3b) ITMS-91064: any manifest that declares tracking must list tracking domains.
+  while IFS= read -r m; do
+    [[ -z "$m" ]] && continue
+    rel="${m#$fw/}"
+    if ! plutil -lint "$m" >/dev/null 2>&1; then
+      echo "  ✗ [$name] malformed privacy manifest (ITMS-91064): $rel"; fail=1; continue
+    fi
+    tracking="$(/usr/libexec/PlistBuddy -c 'Print :NSPrivacyTracking' "$m" 2>/dev/null || echo false)"
+    dt_tracking="$(/usr/libexec/PlistBuddy -c 'Print :NSPrivacyCollectedDataTypes' "$m" 2>/dev/null | grep -c 'NSPrivacyCollectedDataTypeTracking = true' || true)"
+    domains_count="$(/usr/libexec/PlistBuddy -c 'Print :NSPrivacyTrackingDomains' "$m" 2>/dev/null | grep -cE '^\s+' || true)"
+    if [[ "$tracking" == "true" || "${dt_tracking:-0}" -gt 0 ]] && [[ "${domains_count:-0}" -eq 0 ]]; then
+      echo "  ✗ [$name] $rel declares tracking but NSPrivacyTrackingDomains is empty/missing (ITMS-91064)"; fail=1
+    fi
+  done < <(find "$fw" -name "PrivacyInfo.xcprivacy")
   # 4) Every .bundle is a real directory with an Info.plist (not a stray symlink/file).
   while IFS= read -r b; do
     [[ -z "$b" ]] && continue

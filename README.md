@@ -14,13 +14,13 @@ public API; the analytics engine is an internal implementation detail.
 https://github.com/fodoole/qeen-mobile-sdk-ios.git
 ```
 
-Pick a version (e.g. **Up to Next Major** from `1.6.1`) and add the **Qeen** library to your app target.
+Pick a version (e.g. **Up to Next Major** from `1.6.7`) and add the **Qeen** library to your app target.
 
 **Or in `Package.swift`:**
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/fodoole/qeen-mobile-sdk-ios.git", from: "1.6.1"),
+    .package(url: "https://github.com/fodoole/qeen-mobile-sdk-ios.git", from: "1.6.7"),
 ],
 targets: [
     .target(name: "YourApp", dependencies: [
@@ -71,6 +71,36 @@ QeenSDK.handleDeepLink(url)
 attribution — any `utm_*` param and any `*clid` click id (`gclid`, `fbclid`, `ttclid`, …) — and
 every query param on the link is captured on the `Deep Link Opened` event, so new marketing
 params need no SDK update. Attribution is derived server-side by Qeen.
+
+## Consent & App Tracking Transparency (since 1.6.7)
+
+The SDK starts **opted out** — after `configure()` it collects and sends nothing until you
+call `QeenSDK.optIn()`. The choice is persisted across launches.
+
+Qeen forwards purchase events to advertising Conversions APIs, which is **tracking** under
+Apple's ATT rules. The SDK's own privacy manifest does **not** declare tracking — declaring
+it, and gating collection behind consent, is the **integrating app's** responsibility:
+
+1. **Declare tracking in your app's `PrivacyInfo.xcprivacy`** — set `NSPrivacyTracking` to
+   `true` and add your ingestion host to `NSPrivacyTrackingDomains` (e.g. `qm.qeen.ai`).
+2. **Add `NSUserTrackingUsageDescription`** to `Info.plist`, and declare tracking in your
+   App Store Connect privacy questionnaire.
+3. **Show the ATT prompt, then opt in only if authorized:**
+
+```swift
+import AppTrackingTransparency
+import Qeen
+
+ATTrackingManager.requestTrackingAuthorization { status in
+    if status == .authorized {
+        QeenSDK.optIn()          // start collecting
+    } else {
+        QeenSDK.optOut()         // stay opted out (default)
+    }
+}
+
+if QeenSDK.isOptedOut { /* nothing is being collected */ }
+```
 
 ## Typed events
 

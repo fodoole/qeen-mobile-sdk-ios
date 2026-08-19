@@ -1206,6 +1206,91 @@
           },
           {
             "kind": "Function",
+            "name": "optIn",
+            "printedName": "optIn()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO5optInyyFZ",
+            "mangledName": "$s4Qeen0A3SDKO5optInyyFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "optOut",
+            "printedName": "optOut()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Qeen0A3SDKO6optOutyyFZ",
+            "mangledName": "$s4Qeen0A3SDKO6optOutyyFZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isOptedOut",
+            "printedName": "isOptedOut",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Qeen0A3SDKO10isOptedOutSbvpZ",
+            "mangledName": "$s4Qeen0A3SDKO10isOptedOutSbvpZ",
+            "moduleName": "Qeen",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Qeen0A3SDKO10isOptedOutSbvgZ",
+                "mangledName": "$s4Qeen0A3SDKO10isOptedOutSbvgZ",
+                "moduleName": "Qeen",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
             "name": "handleDeepLink",
             "printedName": "handleDeepLink(_:)",
             "children": [
