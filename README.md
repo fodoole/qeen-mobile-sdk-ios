@@ -14,13 +14,13 @@ public API; the analytics engine is an internal implementation detail.
 https://github.com/fodoole/qeen-mobile-sdk-ios.git
 ```
 
-Pick a version (e.g. **Up to Next Major** from `1.6.7`) and add the **Qeen** library to your app target.
+Pick a version (e.g. **Up to Next Major** from `1.7.0`) and add the **Qeen** library to your app target.
 
 **Or in `Package.swift`:**
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/fodoole/qeen-mobile-sdk-ios.git", from: "1.6.7"),
+    .package(url: "https://github.com/fodoole/qeen-mobile-sdk-ios.git", from: "1.7.0"),
 ],
 targets: [
     .target(name: "YourApp", dependencies: [
@@ -72,31 +72,31 @@ attribution — any `utm_*` param and any `*clid` click id (`gclid`, `fbclid`, `
 every query param on the link is captured on the `Deep Link Opened` event, so new marketing
 params need no SDK update. Attribution is derived server-side by Qeen.
 
-## Consent & App Tracking Transparency (since 1.6.7)
-
-The SDK starts **opted out** — after `configure()` it collects and sends nothing until you
-call `QeenSDK.optIn()`. The choice is persisted across launches.
+## Consent & App Tracking Transparency (since 1.7.0)
 
 Qeen forwards purchase events to advertising Conversions APIs, which is **tracking** under
-Apple's ATT rules. The SDK's own privacy manifest does **not** declare tracking — declaring
-it, and gating collection behind consent, is the **integrating app's** responsibility:
+Apple's App Tracking Transparency (ATT) rules. The SDK declares this in its own privacy
+manifest (`NSPrivacyTracking` = `true`, tracking domain `qm.qeen.ai`), so you do not need to
+add tracking domains to your app manifest.
 
-1. **Declare tracking in your app's `PrivacyInfo.xcprivacy`** — set `NSPrivacyTracking` to
-   `true` and add your ingestion host to `NSPrivacyTrackingDomains` (e.g. `qm.qeen.ai`).
-2. **Add `NSUserTrackingUsageDescription`** to `Info.plist`, and declare tracking in your
+Collection is **enabled by default**. Your app is responsible for honoring the user's ATT
+choice — call `QeenSDK.optOut()` when the user does not grant permission. The choice is
+persisted across launches.
+
+1. **Add `NSUserTrackingUsageDescription`** to `Info.plist`, and declare tracking in your
    App Store Connect privacy questionnaire.
-3. **Show the ATT prompt, then opt in only if authorized:**
+2. **Show the ATT prompt and opt out if the user declines:**
 
 ```swift
 import AppTrackingTransparency
 import Qeen
 
 ATTrackingManager.requestTrackingAuthorization { status in
-    if status == .authorized {
-        QeenSDK.optIn()          // start collecting
-    } else {
-        QeenSDK.optOut()         // stay opted out (default)
+    if status != .authorized {
+        QeenSDK.optOut()         // stop collecting; persisted across launches
     }
+    // .authorized: nothing to do — collection is on by default. Call QeenSDK.optIn()
+    // to resume after a previous opt-out.
 }
 
 if QeenSDK.isOptedOut { /* nothing is being collected */ }
