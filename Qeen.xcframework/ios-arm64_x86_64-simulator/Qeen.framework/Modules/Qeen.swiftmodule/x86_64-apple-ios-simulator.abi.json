@@ -34,6 +34,20 @@
       },
       {
         "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "Import",
         "name": "PostHog",
         "printedName": "PostHog",
         "declKind": "Import",
@@ -4567,9 +4581,23 @@
       "value": "\"ai.qeen.sdk.deviceId\""
     },
     {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/InstallState.swift",
+      "kind": "StringLiteral",
+      "offset": 714,
+      "length": 27,
+      "value": "\"qeen_original_app_version\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/InstallState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 872,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/PostHogProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1339,
+      "offset": 1501,
       "length": 16,
       "value": "\"qeen_device_id\""
     },
