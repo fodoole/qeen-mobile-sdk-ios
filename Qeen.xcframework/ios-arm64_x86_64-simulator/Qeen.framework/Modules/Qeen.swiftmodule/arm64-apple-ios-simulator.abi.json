@@ -13,6 +13,34 @@
       },
       {
         "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Qeen"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4566,6 +4594,41 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/AdvertisingIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 919,
+      "length": 16,
+      "value": "\"advertising_id\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/AdvertisingIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 961,
+      "length": 6,
+      "value": "\"idfv\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/AdvertisingIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 998,
+      "length": 12,
+      "value": "\"att_status\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/AdvertisingIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 1047,
+      "length": 29,
+      "value": "\"advertiser_tracking_enabled\""
+    },
+    {
+      "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/AdvertisingIdentity.swift",
+      "kind": "StringLiteral",
+      "offset": 1194,
+      "length": 38,
+      "value": "\"00000000-0000-0000-0000-000000000000\""
+    },
     {
       "filePath": "\/Users\/mohammedhawamdeh\/Desktop\/test-app-qp\/QeenSDK\/Sources\/QeenSDK\/CampaignAttribution.swift",
       "kind": "Array",
